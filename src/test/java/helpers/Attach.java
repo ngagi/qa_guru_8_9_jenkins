@@ -15,6 +15,8 @@ import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
 
+    String str = "MASTER";
+
     @Attachment(value = "{attachName}", type = "text/plain")
     public static String attachAsText(String attachName, String message) {
         return message;
