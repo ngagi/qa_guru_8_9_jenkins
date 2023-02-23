@@ -31,11 +31,10 @@ public class Attach {
     }
 
     public static void browserConsoleLogs() {
-            attachAsText(
-                "Browser console logs",
+        attachAsText("Browser console logs",
                 String.join("\n", Selenide.getWebDriverLogs(BROWSER))
         );
-        String master = "master";
+        String practice = "practice";
     }
 
     @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
