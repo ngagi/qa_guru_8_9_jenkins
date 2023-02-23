@@ -15,7 +15,9 @@ import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
 
-    String str = "MASTER";
+    String str = "BRANCH-A";
+    String str2 = "BRANCH-A 2";
+    String str3 = "MASTER";
 
     @Attachment(value = "{attachName}", type = "text/plain")
     public static String attachAsText(String attachName, String message) {
@@ -33,11 +35,9 @@ public class Attach {
     }
 
     public static void browserConsoleLogs() {
-            attachAsText(
-                "Browser console logs",
+        attachAsText("Browser console logs",
                 String.join("\n", Selenide.getWebDriverLogs(BROWSER))
         );
-        String master = "master";
     }
 
     @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
