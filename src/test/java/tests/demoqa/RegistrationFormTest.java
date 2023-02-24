@@ -11,13 +11,14 @@ import static io.qameta.allure.Allure.step;
 
 public class RegistrationFormTest extends TestBase {
 
-    Faker faker = new Faker();
+    String str = "str";
+    Faker faker3 = new Faker();
 
-    String firstName = faker.name().firstName(),
-            lastName = faker.name().lastName(),
-            email = faker.internet().emailAddress(),
+    String firstName = faker3.name().firstName(),
+            lastName = faker3.name().lastName(),
+            email = faker3.internet().emailAddress(),
             gender = "Other",
-            mobile = faker.number().digits(10),
+            mobile = faker3.number().digits(10),
             dayOfBirth = "10",
             monthOfBirth = "May",
             yearOfBirth = "1988",
@@ -27,7 +28,7 @@ public class RegistrationFormTest extends TestBase {
             hobby2 = "Reading",
             hobby3 = "Music",
             picture = "1.png",
-            currentAddress = faker.address().fullAddress(),
+            currentAddress = faker3.address().fullAddress(),
             state = "Uttar Pradesh",
             city = "Merrut";
 
