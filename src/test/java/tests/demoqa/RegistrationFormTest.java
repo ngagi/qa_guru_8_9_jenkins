@@ -82,7 +82,8 @@ public class RegistrationFormTest extends TestBase {
             $x("//td[text()='Student Email']").parent().shouldHave(text(email));
             $x("//td[text()='Gender']").parent().shouldHave(text(gender));
             $x("//td[text()='Mobile']").parent().shouldHave(text(mobile));
-            $x("//td[text()='Date of Birth']").parent().shouldHave(text(dayOfBirth + " " + monthOfBirth + "," + yearOfBirth));
+            $x("//td[text()='Date of Birth']").parent().shouldHave(text(dayOfBirth + " " + monthOfBirth
+                    + "," + yearOfBirth));
             $x("//td[text()='Subjects']").parent().shouldHave(text(subject1 + ", " + subject2));
             $x("//td[text()='Hobbies']").parent().shouldHave(text(hobby1 + ", " + hobby2 + ", " + hobby3));
             $x("//td[text()='Picture']").parent().shouldHave(text(picture));
