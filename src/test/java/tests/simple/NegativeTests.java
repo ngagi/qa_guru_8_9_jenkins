@@ -27,7 +27,7 @@ public class NegativeTests {
     }
 
     @Test
-    void test4() {
+    void test5() {
         assertTrue(false);
     }
 }

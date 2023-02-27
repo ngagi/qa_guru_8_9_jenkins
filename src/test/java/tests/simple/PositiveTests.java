@@ -50,9 +50,4 @@ public class PositiveTests {
     void test8() {
         assertTrue(true);
     }
-
-    @Test
-    void test9() {
-        assertTrue(true);
-    }
 }
