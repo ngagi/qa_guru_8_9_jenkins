@@ -26,6 +26,12 @@ public class NegativeTests {
         assertTrue(false);
     }
 
+    //git practice
+    @Test //TODO: delete this
+    void test4() {
+        assertTrue(false);
+    }
+
     @Test
     void test5() {
         assertTrue(false);
